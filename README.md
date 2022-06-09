@@ -47,5 +47,11 @@ _4 Ejecuta el siguiente comando:_
 git clone https://github.com/trainingSoporte/js_to_typescript.git
 
 ```
+### Desafio 🏆
 
+_1 En el código del archivo sincroLoad.js, agrega al objeto generado desde data.txt la propiedad "id" con algún valor._ 
+
+_2 Crea un nuevo archivo, asincroLoad.js, y modifica el código del archivo sincroLoad.js para que este en su versión asíncrona._
+
+_3 ¿Te animas a convertir el archivo asincroLoad.js a Typescript?_
 
