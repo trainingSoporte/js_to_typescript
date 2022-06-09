@@ -44,6 +44,8 @@ _3 Abre una linea de comandos (GIT Bash - Recomendado!) Ir al directorio creado 
 _4 Ejecuta el siguiente comando:_
 
 ```
-git clone 
+git clone https://github.com/trainingSoporte/js_to_typescript.git
 
 ```
+
+
