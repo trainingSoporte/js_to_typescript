@@ -8,10 +8,8 @@ const leerArchivo = () => {
         console.log("data");
         console.log(data);
         console.log('successfully read');
-
-        return data.map((obj,index)=>{
-            return Object.assign({id:index},obj);
-        });
+     
+        return data;
     } catch (err) {
         // handle the error
         console.error(err);
@@ -20,4 +18,4 @@ const leerArchivo = () => {
 
 let arch = leerArchivo();
 
-console.log(arch);
+// console.log(arch);
