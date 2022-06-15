@@ -1,15 +1,15 @@
-const fs = require('fs');
+import * as fs from 'fs/promises';
 
-const leerArchivo = () => {
+const leerArchivo = async() => {
     try {
 
-        const archivo = fs.readFileSync('./data.txt');
+        const archivo = await fs.readFile('./data.txt');
         let data = JSON.parse(archivo.toString());
         console.log("data");
         console.log(data);
         console.log('successfully read');
 
-        return data.map((obj,index)=>{
+        return data.map((obj:Object,index:number)=>{
             return Object.assign({id:index},obj);
         });
     } catch (err) {
@@ -18,6 +18,8 @@ const leerArchivo = () => {
     }
 }
 
-let arch = leerArchivo();
+(async ()=> {
+    let arch = await leerArchivo()
+    console.log(arch);
+})();
 
-console.log(arch);
