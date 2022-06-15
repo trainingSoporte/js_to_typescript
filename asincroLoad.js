@@ -1,9 +1,9 @@
-const fs = require('fs');
+const fs = require('fs/promises');
 
-const leerArchivo = () => {
+const leerArchivo = async() => {
     try {
 
-        const archivo = fs.readFileSync('./data.txt');
+        const archivo = await fs.readFile('./data.txt');
         let data = JSON.parse(archivo.toString());
         console.log("data");
         console.log(data);
@@ -18,6 +18,7 @@ const leerArchivo = () => {
     }
 }
 
-let arch = leerArchivo();
-
-console.log(arch);
+(async ()=> {
+    let arch = await leerArchivo()
+    console.log(arch);
+})();
